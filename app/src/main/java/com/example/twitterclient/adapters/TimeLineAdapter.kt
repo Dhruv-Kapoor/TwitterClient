@@ -16,9 +16,10 @@ import com.example.twitterclient.adapters.TimeLineAdapter.Companion.PHOTO
 import com.example.twitterclient.adapters.TimeLineAdapter.Companion.VIDEO
 import com.example.twitterclient.dataClasses.*
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_gif_view.view.*
 import kotlinx.android.synthetic.main.activity_image_view.*
-import kotlinx.android.synthetic.main.tweet_item_view.view.*
-import kotlinx.android.synthetic.main.tweet_item_view.view.iv1
+import kotlinx.android.synthetic.main.tweet_four_images.view.*
+import kotlinx.android.synthetic.main.tweet_link_preview.view.*
 import kotlinx.android.synthetic.main.tweet_no_media.view.ivProfilePic
 import kotlinx.android.synthetic.main.tweet_no_media.view.retweetTextLayout
 import kotlinx.android.synthetic.main.tweet_no_media.view.tvContent
@@ -27,6 +28,7 @@ import kotlinx.android.synthetic.main.tweet_no_media.view.tvRetweet
 import kotlinx.android.synthetic.main.tweet_no_media.view.tvTime
 import kotlinx.android.synthetic.main.tweet_no_media.view.tvUserName
 import kotlinx.android.synthetic.main.tweet_video.view.*
+import kotlinx.android.synthetic.main.tweet_video.view.iv1
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
