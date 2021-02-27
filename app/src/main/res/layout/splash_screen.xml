@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/green">
+
+    <ImageView
+        android:id="@+id/ivLauncherIcon"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:src="@drawable/twitter_logo_white"
+        android:transitionName="@string/launcherTransition"/>
+
+</FrameLayout>

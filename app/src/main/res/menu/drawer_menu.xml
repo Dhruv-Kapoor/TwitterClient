@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/main">
+        <item
+            android:id="@+id/itemProfile"
+            android:title="Profile"
+            android:icon="@drawable/user" />
+
+        <item
+            android:id="@+id/itemLists"
+            android:title="Lists"
+            android:icon="@drawable/list" />
+        <item
+            android:id="@+id/itemTopics"
+            android:title="Topics"
+            android:icon="@drawable/reply"/>
+
+        <item
+            android:id="@+id/itemBookmarks"
+            android:title="Bookmarks"
+            android:icon="@drawable/bookmark"/>
+
+        <item
+            android:id="@+id/itemMoments"
+            android:title="Moments"
+            android:icon="@drawable/flash"/>
+    </group>
+
+    <group
+        android:id="@+id/submenu">
+        <item
+            android:id="@+id/itemSettings"
+            android:title="Settings and privacy" />
+        <item
+            android:id="@+id/itemHelp"
+            android:title="Help Centre" />
+    </group>
+
+</menu>

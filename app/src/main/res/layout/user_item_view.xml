@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:padding="@dimen/paddingBetweenContents"
+        app:shapeAppearance="@style/CircularImageView" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_toStartOf="@+id/btnFollow"
+        android:layout_toEndOf="@+id/ivProfilePic"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="2dp"
+        android:textColor="?attr/textColorPrimary"
+        android:textSize="?attr/textSizeNormal"
+        android:textStyle="bold"
+        tools:text="Dhruv Kapoor" />
+
+    <TextView
+        android:id="@+id/tvHandle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUserName"
+        android:layout_marginStart="2dp"
+        android:layout_toStartOf="@+id/btnFollow"
+        android:layout_toEndOf="@+id/ivProfilePic"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="2dp"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="?attr/textSizeSmall"
+        tools:text="\@DhruvKapoor" />
+
+    <ToggleButton
+        android:id="@+id/btnFollow"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/follow_button_selector"
+        android:paddingHorizontal="12dp"
+        android:textColor="@drawable/follow_button_selector"
+        android:textOff="Follow"
+        android:textOn="Following"
+        android:textAllCaps="false"
+        android:textSize="?attr/textSizeNormal" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHandle"
+        android:layout_marginStart="@dimen/tweetTextStartMargin"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingHorizontal="2dp"
+        android:textColor="?attr/textColorPrimary"
+        android:textSize="?attr/textSizeNormal"
+        tools:text="Dhruv Kapoor" />
+
+</RelativeLayout>

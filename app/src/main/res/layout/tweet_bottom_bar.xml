@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/paddingBetweenContents">
+
+    <ImageView
+        android:id="@+id/btnReply"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/reply" />
+
+    <TextView
+        android:id="@+id/tvReplyCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="@dimen/paddingBetweenContents"
+        android:text=""
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="?attr/textSizeSmall" />
+
+    <ImageView
+        android:id="@+id/btnRetweet"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:scaleY="1.2"
+        android:src="@drawable/retweet_64" />
+
+    <TextView
+        android:id="@+id/tvRetweetCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="@dimen/paddingBetweenContents"
+        tools:text="123"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="?attr/textSizeSmall" />
+
+    <ImageView
+        android:id="@+id/btnLike"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/like" />
+
+    <TextView
+        android:id="@+id/tvLikeCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="@dimen/paddingBetweenContents"
+        tools:text="123"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="?attr/textSizeSmall" />
+
+    <ImageView
+        android:id="@+id/btnShare"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/share" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

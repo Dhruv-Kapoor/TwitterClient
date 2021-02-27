@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ImageViewActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title=""
+        android:background="@android:color/transparent"/>
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@id/bottomBar"
+        app:use_controller="false"
+        android:layout_below="@id/toolbar"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:padding="@dimen/paddingBetweenContents">
+
+        <ImageView
+            android:id="@+id/btnReply"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/reply" />
+
+        <TextView
+            android:id="@+id/tvReplyCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="@dimen/paddingBetweenContents"
+            android:text=""
+            android:textColor="?attr/textColorSecondary"
+            android:textSize="?attr/textSizeSmall" />
+
+        <ImageView
+            android:id="@+id/btnRetweet"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleY="1.2"
+            android:src="@drawable/retweet_64" />
+
+        <TextView
+            android:id="@+id/tvRetweetCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="@dimen/paddingBetweenContents"
+            tools:text="123"
+            android:textColor="?attr/textColorSecondary"
+            android:textSize="?attr/textSizeLarge" />
+
+        <ImageView
+            android:id="@+id/btnLike"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/like" />
+
+        <TextView
+            android:id="@+id/tvLikeCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="@dimen/paddingBetweenContents"
+            tools:text="123"
+            android:textColor="?attr/textColorSecondary"
+            android:textSize="?attr/textSizeLarge" />
+
+        <ImageView
+            android:id="@+id/btnShare"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/share" />
+
+    </LinearLayout>
+
+</RelativeLayout>

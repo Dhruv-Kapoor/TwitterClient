@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:adjustViewBounds="true"
+                    app:tint="@color/green"
+                    android:transitionName="@string/launcherTransition"
+                    android:src="@drawable/twitter_logo" />
+            </FrameLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavBar"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" >
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavBar"
+            android:background="?android:attr/listDivider" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:itemBackground="?android:attr/colorBackground"
+            app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+            app:menu="@menu/bottom_nav_bar"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/leftNavView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:layout_gravity=""
+        app:headerLayout="@layout/nav_drawer_header"
+        android:background="?android:attr/colorBackground"
+        app:menu="@menu/drawer_menu">
+
+        <FrameLayout
+            android:id="@+id/bottomBar"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="top"
+                android:background="?android:attr/listDivider" />
+            <ImageView
+                android:id="@+id/ivNightMode"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="start"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/bulb"
+                app:tint="@color/green"/>
+
+            <ImageView
+                android:id="@+id/ivQr"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginVertical="10dp"
+                android:src="@drawable/qrcode"
+                app:tint="@color/green"/>
+        </FrameLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

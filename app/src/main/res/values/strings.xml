@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Twitter</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="launcherTransition">launcher_transition</string>
+</resources>
+
+
+    <!--
+
+API Key: hq6fXSpHUr4riNgi7aXTbouzI
+
+API Secret Key: pizctbuBQW3df1UaeBv5nXFimu1oFGPogwXK3mTNuLavTrrm67
+
+Bearer Token: AAAAAAAAAAAAAAAAAAAAAFDEMAEAAAAAgMghNq7ES6Fs%2FdZ52FH qignHfQ%3DJpeDo7gqSGOnsevCQjdDNC2tURx4mJK9A0KcUQGKKOVsdcAhii
+
+Access Token: 935372634291716096-U0uGk6dHgzl7geeOOReRyrTP02GMeNH
+
+Access Token Secret: kXTCriTM4jscFhVST0zZ2ZJI6YL1XlHMfNjnB6HFUX6di
+-->
+
